@@ -4,39 +4,76 @@
     <title>Phillip King | Portfolio</title>
 
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #0f172a;
-            color: white;
-        }
+       <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-color: #0f172a;
+        color: white;
+        animation: fadeIn 1s ease-in;
+    }
 
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 40px 0;
-        }
+    .container {
+        width: 80%;
+        margin: auto;
+        padding: 40px 0;
+    }
 
-        h1 {
-            font-size: 40px;
-        }
+    h1 {
+        font-size: 40px;
+        animation: slideDown 0.8s ease;
+    }
 
-        h2 {
-            border-bottom: 2px solid #38bdf8;
-            padding-bottom: 5px;
-        }
+    h2 {
+        border-bottom: 2px solid #38bdf8;
+        padding-bottom: 5px;
+        margin-top: 40px;
+    }
 
-        .card {
-            background: #1e293b;
-            padding: 20px;
-            margin: 15px 0;
-            border-radius: 10px;
-        }
+    .card {
+        background: #1e293b;
+        padding: 20px;
+        margin: 15px 0;
+        border-radius: 10px;
+        transition: all 0.3s ease;
+    }
 
-        a {
-            color: #38bdf8;
-            text-decoration: none;
+    /* 🔥 HOVER EFFECT */
+    .card:hover {
+        transform: translateY(-5px);
+        background: #334155;
+        box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
+    }
+
+    a {
+        color: #38bdf8;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    /* 🔥 LINK HOVER */
+    a:hover {
+        color: #7dd3fc;
+        text-decoration: underline;
+    }
+
+    /* 🔥 ANIMATIONS */
+    @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+        from {
+            transform: translateY(-20px);
+            opacity: 0;
         }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
     </style>
 </head>
 
