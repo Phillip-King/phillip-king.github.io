@@ -4,76 +4,76 @@
     <title>Phillip King | Portfolio</title>
 
     <style>
-       <style>
-    body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        background-color: #0f172a;
-        color: white;
-        animation: fadeIn 1s ease-in;
-    }
-
-    .container {
-        width: 80%;
-        margin: auto;
-        padding: 40px 0;
-    }
-
-    h1 {
-        font-size: 40px;
-        animation: slideDown 0.8s ease;
-    }
-
-    h2 {
-        border-bottom: 2px solid #38bdf8;
-        padding-bottom: 5px;
-        margin-top: 40px;
-    }
-
-    .card {
-        background: #1e293b;
-        padding: 20px;
-        margin: 15px 0;
-        border-radius: 10px;
-        transition: all 0.3s ease;
-    }
-
-    /* 🔥 HOVER EFFECT */
-    .card:hover {
-        transform: translateY(-5px);
-        background: #334155;
-        box-shadow: 0px 10px 20px rgba(0,0,0,0.5);
-    }
-
-    a {
-        color: #38bdf8;
-        text-decoration: none;
-        transition: 0.3s;
-    }
-
-    /* 🔥 LINK HOVER */
-    a:hover {
-        color: #7dd3fc;
-        text-decoration: underline;
-    }
-
-    /* 🔥 ANIMATIONS */
-    @keyframes fadeIn {
-        from { opacity: 0; }
-        to { opacity: 1; }
-    }
-
-    @keyframes slideDown {
-        from {
-            transform: translateY(-20px);
-            opacity: 0;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #0f172a;
+            color: #e2e8f0; /* 🔥 FIXED TEXT COLOR */
         }
-        to {
-            transform: translateY(0);
-            opacity: 1;
+
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 40px 0;
         }
-    }
-</style>
+
+        h1 {
+            font-size: 42px;
+            margin-bottom: 5px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #38bdf8;
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            background: #334155;
+            box-shadow: 0px 12px 25px rgba(0,0,0,0.6);
+        }
+
+        .project-img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #7dd3fc;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: #38bdf8;
+            color: black;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .btn:hover {
+            background: #7dd3fc;
+        }
     </style>
 </head>
 
@@ -92,13 +92,17 @@
     <h2>Projects</h2>
 
     <div class="card">
+        <img src="https://via.placeholder.com/800x400" class="project-img">
         <h3>Sales Dashboard (Excel)</h3>
-        <p>Developed an interactive Excel dashboard analyzing sales trends, identifying top-performing products, and supporting data-driven decision-making.</p>
+        <p>Developed an interactive Excel dashboard analyzing sales trends and identifying top-performing products.</p>
+        <a href="#" class="btn">View Project</a>
     </div>
 
     <div class="card">
+        <img src="https://via.placeholder.com/800x400" class="project-img">
         <h3>SQL Data Analysis</h3>
-        <p>Performed data querying and analysis using SQL to extract insights and improve business understanding of key metrics.</p>
+        <p>Queried datasets using SQL to extract insights and improve understanding of key business metrics.</p>
+        <a href="#" class="btn">View Project</a>
     </div>
 
     <h2>Skills</h2>
